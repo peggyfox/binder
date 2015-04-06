@@ -67,7 +67,7 @@ While Rails provides tools for skipping and debugging callbacks, these methods r
 Callbacks can make it difficult to keep track of what's happening.  If they affect other models that also have callbacks, that can set off a diffult to trace chain of events and can affect performance.  It is better to use service objects, outside of the model and the controller, that are testable and that handle the propper chain of events.
 
 2. Bad to use in cases unless an event should ALWAYS occur.
-It is recommended to only use callbacks when you ALWAYS want an event to occur, like incrementing a record count, for example.  It is bad practice to use them to send notifications, are there may be instances when the notifications should not be sent.
+It is recommended to only use callbacks when you ALWAYS want an event to occur, like incrementing a record count, for example.  It is bad practice to use them to send notifications, as there may be instances when the notifications should not be sent.
 
 3. Dependency on order
 Rails callbacks include 19 methods (such as ```before_save``` and ```after_create ```) as well as other events set in various places in the code (```dependent: destroy```, for example, is a callback that destroys dependents of an object).  When one callback is dependent on data that will be changed in another callback, the order in which they are called must be managed.  In cases where the order of one of the 19 callback methods is important it is best to use one callback that executes each of the updates within it.  In the case of a callback method that must know something about an object's dependents, it is possible to pass ```prepend: true ``` to the callback so that it is run first in the sequence of all callbacks.
