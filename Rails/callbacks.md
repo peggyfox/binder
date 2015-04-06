@@ -49,7 +49,7 @@ You can also passing a block to the skip method.
 
 
 ## Debugging Callbacks
-(From the Rails API Guides)[http://api.rubyonrails.org/classes/ActiveRecord/Callbacks.html], running the following code will show all ```after_save``` callbacks on ```Hours```, but the output can be quite long depending on how many fields are on the model.
+[From the Rails API Guides](http://api.rubyonrails.org/classes/ActiveRecord/Callbacks.html), running the following code will show all ```after_save``` callbacks on ```Hours```, but the output can be quite long depending on how many fields are on the model.
 
 ```ruby
 Hours._save_callbacks.select { |cb| cb.kind.eql?(:after) }
