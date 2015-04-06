@@ -5,7 +5,7 @@ This book draws on the 'Gang of Four' (Erich Gamma, Richard Helm, Ralph Johnson 
 ## Patterns for Patterns (last one added by Fernandez)
 
 1. "Separate out the things that change from those that stay the same"
-Write less tightly coupled code and contain the parts that are going to change in methods or classes so that making a change does not require making it making places.
+Write less tightly coupled code and contain the parts that are going to change in methods or classes so that making a change does not require making it making places.   
 
 2. "Program to an interface, not and implementation"
 Program to the most general type - for example, instead of car, program to vehicle.
@@ -15,9 +15,9 @@ Inheritance can magnify the coupling of code.  Composition allows for "assembl[i
 
 4. "Delegate, delegate, delegate"
 "Pass the buck" technique where the only thing a method does in one class is call a method on another class.
---
+
 5. "You ain't gonna need it"
 "The YAGNI principle says sinply that you should not implement features, or design in flexibility that you don't need right now".  If code is written well, it will allow enought flexibility to be able to be changed later.
 
 # Brief Descriptions of Each Pattern
-- 
+
