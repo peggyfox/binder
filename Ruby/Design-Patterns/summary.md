@@ -18,6 +18,3 @@ Inheritance can magnify the coupling of code.  Composition allows for "assembl[i
 
 5. "You ain't gonna need it"
 "The YAGNI principle says sinply that you should not implement features, or design in flexibility that you don't need right now".  If code is written well, it will allow enought flexibility to be able to be changed later.
-
-# Brief Descriptions of Each Pattern
-
