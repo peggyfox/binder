@@ -1,4 +1,0 @@
-# Soft Delete
-
-(draft)
-
